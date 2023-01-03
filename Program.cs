@@ -5,3 +5,7 @@ decimal taxPercentage = .15825m;
 decimal total = 3185.19m;
 
 Console.WriteLine($"Invoice Number: {invoiceNumber}");
+Console.WriteLine($"   Measurement: {productMeasurement:N3} mg");
+Console.WriteLine($"     Sub Total: {subtotal:C}");
+Console.WriteLine($"           Tax: {taxPercentage:P2}");
+Console.WriteLine($"     Total Due: {total:C}");
