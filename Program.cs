@@ -1,9 +1,3 @@
-﻿string paymentId = "769";
-string payeeName = "Mr. Bikash Dahal";
-string paymentAmount = "$5,000.00";
-
-var formattedLine = paymentId.PadRight(6);
-formattedLine += payeeName.PadRight(24);
-formattedLine += paymentAmount.PadLeft(10);
-
-Console.WriteLine(formattedLine);
+﻿string data = "12345John Smith          5000  3  ";
+string updatedData = data.Remove(5, 20);
+Console.WriteLine(updatedData);
