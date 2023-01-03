@@ -1,11 +1,9 @@
-﻿int invoiceNumber = 1201;
-decimal productMeasurement = 25.4568m;
-decimal subtotal = 2750.00m;
-decimal taxPercentage = .15825m;
-decimal total = 3185.19m;
+﻿string paymentId = "769";
+string payeeName = "Mr. Bikash Dahal";
+string paymentAmount = "$5,000.00";
 
-Console.WriteLine($"Invoice Number: {invoiceNumber}");
-Console.WriteLine($"   Measurement: {productMeasurement:N3} mg");
-Console.WriteLine($"     Sub Total: {subtotal:C}");
-Console.WriteLine($"           Tax: {taxPercentage:P2}");
-Console.WriteLine($"     Total Due: {total:C}");
+var formattedLine = paymentId.PadRight(6);
+formattedLine += payeeName.PadRight(24);
+formattedLine += paymentAmount.PadLeft(10);
+
+Console.WriteLine(formattedLine);
